@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+h2,
+h3 {
+  font-weight: 100;
+}
+.nav-header {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+}
+.nav-logo {
+  cursor: pointer;
+}
+.nav-drop-down {
+  display: inline-block;
+  width: 20px;
+  justify-self: flex-end;
+  cursor: pointer;
+  transform: display 2s;
+}
+.nav-links {
+  width: 80%;
+  margin: 20px auto;
+  display: none;
+  /* transition: display 1s;  transition doesnt support display property*/
+  /* use height property instead or opacity */
+}
+.nav-links p {
+  padding: 30px 15px;
+}
+.nav-links p:hover {
+  background: rgb(41, 166, 189);
+  color: white;
+}
+.nav-links-icons {
+  margin-left: 20px;
+  display: none;
+}
+.nav-links-icons i {
+  margin-left: 20px;
+}
+.show {
+  display: block;
+}
+
+.background {
+  text-align: center;
+  padding-top: 150px;
+  color: white;
+  background: url("../assets/Background-image.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.background h4 {
+  font-weight: 100;
+}
+.background button {
+  padding: 15px 30px;
+  margin-top: 40px;
+  background: lightblue;
+  border: none;
+  border-radius: 20px;
+}
+
+.fashion-week {
+  display: grid;
+  background: url("../assets/Abract01.png") right no-repeat;
+  margin: 50px auto;
+}
+.fashion-week-item {
+  margin: 10px auto;
+  text-align: center;
+  border: none;
+  box-shadow: 5px 3px 10px gray;
+  width: 90vw;
+}
+.fashion-week-item * {
+  margin: 8px auto;
+}
+.fashion-week-item img {
+  width: 100%;
+  margin-top: 0;
+}
+.fashion-week-item button {
+  padding: 10px 15px;
+  background: lightblue;
+  border-radius: 20px;
+  border: none;
+}
+
+.features :nth-child(4) {
+  border-bottom: none;
+}
+.feature,
+.features-footer {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid grey;
+  padding-bottom: 20px;
+}
+.feature {
+  overflow: hidden;
+  position: relative;
+}
+.feature img {
+  width: 100%;
+  transition: transform 0.5s ease-in;
+}
+.feature img:hover,
+.post img:hover {
+  transform: scale(1.2);
+}
+.feature * {
+  margin-top: 15px;
+}
+.feature button {
+  background: lightblue;
+  padding: 10px;
+  border: none;
+}
+.feature button i {
+  margin: 0;
+}
+.features-footer {
+  text-align: center;
+  border-bottom: none;
+  /* margin: 10px; */
+}
+.nums {
+  background: gray;
+  padding: 5px 8px;
+  border-radius: 30px;
+  color: white;
+}
+
+.second-feature {
+  width: 80%;
+  margin: 0 auto;
+}
+.category {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: lightblue;
+  margin: 10px 40px auto;
+  border-radius: 20px;
+  padding: 10px 10px;
+}
+
+.popular-posts {
+  width: 80%;
+  margin: 20px auto;
+}
+.popular-posts .post {
+  width: 80%;
+  margin: 50px;
+}
+.post img {
+  width: 100%;
+  transition: transform 0.5s ease-in;
+}
+.post h3 {
+  margin: 20px auto;
+}
+.post {
+  overflow: hidden;
+  position: relative;
+}
+
+.news-letter {
+  width: 80%;
+  margin: 20px auto;
+}
+.news-letter-wrapper {
+  width: 80%;
+  margin: 20px auto;
+}
+.news-letter-wrapper input {
+  padding: 10px;
+  width: 90%;
+}
+.news-letter-wrapper button {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px 20px;
+  background: lightblue;
+  border: none;
+}
+
+.popular-tags {
+  margin: 50px 30px auto;
+}
+.tags-wrapper {
+  margin: 10px auto;
+}
+.tag {
+  background: lightblue;
+  display: inline-block;
+  border-radius: 20px;
+  margin: 5px 10px;
+  padding: 10px;
+}
+
+.footer {
+  display: grid;
+  /* width: 80%; */
+  margin: auto;
+  background: black;
+  color: white;
+}
+.footer p {
+  color: gray;
+}
+.footer > div {
+  width: 80%;
+  margin: 10px auto;
+}
+.footer h2,
+.footer p {
+  margin: 10px auto;
+}
+.insta h2 {
+  margin-bottom: 10px;
+}
+.insta-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+  justify-content: space-between;
+}
+.insta-imgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: auto;
+  gap: 10px;
+}
+.insta-imgs img {
+  width: 100%;
+}
+.btn-wrapper {
+  text-align: right;
+}
+.follow-us-icons i {
+  font-size: 1em;
+  margin: auto 10px;
+  cursor: pointer;
+}
+
+/* Tablet size */
+@media screen and (min-width: 560px) {
+  .nav {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-content: space-between;
+  }
+  .nav-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .nav-header {
+    margin: 0 auto;
+    font-size: 1.5vw;
+  }
+  .nav-header i {
+    display: none;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .nav-link {
+    font-size: 1.5vw;
+  }
+  .nav-links-icons {
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-links-icons i {
+    font-size: 1.3vw;
+  }
+  .fashion-week {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .fashion-week-item {
+    width: 30vw;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+  .features :nth-child(1) img {
+    margin-top: 0;
+  }
+  .btn-wrapper a {
+    display: none;
+  }
+  .insta-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .copy-right {
+    grid-column: 1 / span 2;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .footer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .copy-right {
+    grid-column: 1 / span 4;
+    text-align: center;
+  }
+}
